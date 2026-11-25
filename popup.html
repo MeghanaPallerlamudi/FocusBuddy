@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FocusBuddy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <header>
+      <div class="mark">FB</div>
+
+      <div>
+        <p class="kicker">YOUR STUDY COMPANION</p>
+        <h1>FocusBuddy</h1>
+      </div>
+
+      <span class="status" id="status">ON</span>
+    </header>
+
+    <section class="hero">
+      <img
+        src="assets/reading-gentleman.png"
+        alt="Your reading companion"
+      >
+
+      <div>
+        <p class="kicker">A GENTLE REMINDER</p>
+
+        <h2>
+          One more chapter.<br>
+          One less distraction.
+        </h2>
+
+        <p>He'll be here when you need a nudge.</p>
+      </div>
+    </section>
+
+    <section class="toggle-row">
+      <div>
+        <strong>Distraction guard</strong>
+        <small>Show the reminder on blocked sites</small>
+      </div>
+
+      <label class="switch">
+        <input type="checkbox" id="enabled">
+        <span></span>
+      </label>
+    </section>
+
+    <section class="sites">
+      <div class="section-head">
+        <h3>Blocked websites</h3>
+        <span id="site-count"></span>
+      </div>
+
+      <form id="add-form">
+        <input
+          id="new-site"
+          type="text"
+          placeholder="Add a website (e.g. tiktok.com)"
+          autocomplete="off"
+        >
+
+        <button type="submit">ADD</button>
+      </form>
+
+      <ul id="site-list"></ul>
+    </section>
+
+    <button class="reset" id="reset">
+      Reset distraction level
+    </button>
+
+    <footer>
+      Five seconds to rethink your choices. 📖
+    </footer>
+
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
